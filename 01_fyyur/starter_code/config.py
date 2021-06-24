@@ -1,0 +1,17 @@
+import os
+SECRET_KEY = os.urandom(32)
+# Grabs the folder where the script runs.
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+
+# Secret key for wtforms
+SECRET_KEY = 'super secret password'
+
+# Enable debug mode.
+DEBUG = True
+
+# Connect to the database
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+# TODO IMPLEMENT DATABASE URL
+SQLALCHEMY_DATABASE_URI = "postgresql://postgres:root@localhost:5432/fyyur"
